@@ -1,0 +1,43 @@
+<!-- NOTE: _____slider images always of same size_____ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image slider with javascript</title>
+    <link rel="stylesheet" href="slide.css">
+  </head>
+  <body>
+    <div class="slide-container">
+      
+      <!-- every .class=slide represent a slide -->
+        <div class="slide">
+        <img src="img/img1.jpeg" alt="" />
+        <div class="caption">caption text 1</div>
+      </div>
+
+      <div class="slide">
+        <img src="img/img2.jpeg" alt="" />
+        <div class="caption">caption text 2</div>
+      </div>
+
+      <div class="slide">
+        <img src="img/img3.jpeg" alt="" />
+        <div class="caption">caption text 3</div>
+      </div>
+
+      <div class="slide">
+        <img src="img/img4.jpeg" alt="" />
+        <div class="caption">caption text 4</div>
+      </div>
+
+      <!-- for left and right arrow -->
+      <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+      <span class="arrow next" onclick="controller(1)">&#10095</span>
+    </div>
+
+    <script src="slide.js"></script>
+  </body>
+</html>

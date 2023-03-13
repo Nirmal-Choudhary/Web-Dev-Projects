@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+/* position relative tabhi kaam krta hai jb uske child ki position absolute ho */
+.slide-container{
+    position:relative;
+    width: 100%;
+
+    
+
+}
+.slide img{
+    width: 100%; /* isse images scroll nhi hogi */
+
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;/* overlap arrow */
+    top: 45%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.312);
+    padding: 8px 19px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.next{
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+.caption{
+    color: white;
+    font-size: 30px;
+    font-weight:bold;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0,0, 0.515);
+    padding: 15px 0px;
+}
+
+/* hide all imagesslide bcoz after 1st image all images show with the help of javascript */
+.slide{
+    display: none;
+}
